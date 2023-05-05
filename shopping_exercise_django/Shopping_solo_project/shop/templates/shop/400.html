@@ -1,0 +1,25 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% block title %}404 error{% endblock %}
+{%block style%}
+<style>
+.error{
+    margin: 30px;
+    margin-top: 60px;
+   display: flex;
+   flex-direction: column;
+   justify-contents: center;
+   align-items: center;
+   transform: translateY(70%);
+} 
+.error h4{
+    margin-bottom: 20px;
+}
+</style>
+{%endblock%}
+{% block content %}
+<div class="error">
+    <h4>Oops!Looks like your input values are wrong 😟</h4>
+    <p>Please enter valid values !</p>
+</div>
+{%endblock%}

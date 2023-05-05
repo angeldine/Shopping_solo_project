@@ -1,0 +1,30 @@
+  {% extends 'shop/base.html' %}
+  {% block content %}
+    <h1>DiamondzFurnitures Staff Dashboard</h1>
+    
+    
+   <div>
+<canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script type= 'text/javascript'>
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+          labels:['Bookcases','Chairs','Labels','Tables','Storage','Furnishings','Art','Binders','Appliances','Phones','Papers'],
+          datasets: [{
+              label: 'Sales profit for each product for year 2022' ,
+              borderColor: 'rgb(255, 99, 132)',
+              backgroundColor: "rgb(255, 99, 132)",
+              data: {{data}},
+            }]
+            },
+            
+});
+     
+</script>
+  
+
+    {% endblock %}

@@ -1,0 +1,24 @@
+  {% extends 'shop/base.html' %}
+  {% load static %}
+  {% block content %}
+   
+    <div class="row" >
+        <p>{{ deleted }} </p>
+    {% for product in products %}
+    {%csrf_token%}
+    <div class="col-md-4 mb-3">
+		<img style="height:280px; padding:10px;" class="thumbnail" src="{{product.imageURL}}" alt="Product currently unavailable">
+       
+        <div class="box-element product">
+            <h6><strong>{{product.name}}</strong></h6>
+            <hr>
+            <button data-product={{product.id}} data-action="add" class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+            <a class="btn btn-outline-success" href="{% url 'shop:product_detail' id=product.id %}">View</a>
+            <h4 style="display: inline-block; float: right">
+                <strong>£{{product.price|floatformat:2}}</strong></h4>
+        </div>
+    </div>
+
+	{% endfor %}
+</div>
+{% endblock content %}
