@@ -2,55 +2,22 @@
 A Python Django driven shopping website for Furniture sales.
 
 **********
-Github Repository: 
+Github Repository: git@github.com:angeldine/Shopping_solo_project.git
+Render : https://shopping-solo-project.onrender.com
 
 **********
-
-Django follows a model-view-controller architecture so that you can put code in a 'good' place for reuse. However, in Django the names are different. Models are models, views in Django are controllers, and it uses templates as views. Remember this as we go forward and it will help to keep things clearer.
-
-This is NOT a proper shopping site, but the back end of what one could be. It has some of the authentication and security aspects that you'd expect using what's available in Django. The current implementation probably needs more refinement, but works as a starting point for an example. The purpose of this is to let you explore how you retrieve and display the information that you want to show on the pages of the site.
-
-The goal of 'deliberate practice' is to think about how you'd solve this challenge, and to work at developing code to make this work. There is no single 'correct' version of this code. The purpose of the exercise it become familiar with different ways of making the application work. You should explore how this simple application is done in Django so that you understand how variables in views are show up in the templates you see in the browser.
-
-Under 'deliberate practice' we offer up the challenge, then think about options for developing a solution, and code for 12 minutes. After that we pause to discuss how people are approaching the problem, and what they're trying to do. This should be repeated three times and then wrapped up with time for people to express what they found most useful during the session. This should take an hour.
-
-You can clone the repository for this application, and then add the required libraries, plus set up your environment. Start by cloning this repo to your own device, using either the command line, or download it as zip file. Then open a terminal in the app's directory and use the commands below to get started.
-
+This is a Django based web application of a Furniture Store named Diamondz Furnitures. This store allows guest to view products available in the store, but only registered customers and admin can
+make purchases from the store.
+Below highlights detailed guidelines of how to configure the application.
 ## Set up your environment
- We can start developing our application to display the data. Create a new project folder called 'shopping' and then cd into the folder via the terminal and execute these commands:
-
-        pyenv local 3.7.0 # this sets the local version of python to 3.7.0
-        python3 -m venv .venv # this creates the virtual environment for you
+        git clone git@github.com:angeldine/Shopping_solo_project.git
         source .venv/bin/activate # this activates the virtual environment
         pip install --upgrade pip [ this is optional]  # this installs pip, and upgrades it if required.
 
-We will use Django (https://www.djangoproject.com) as our web framework for the application. We install that with 
-        
-        pip install django
-
-And that will install django version 3.1.3 with its associated dependencies. We can now start to build the application.
-
-We can now add in some random content for the shopping application using the Faker library from https://pypi.org/project/Faker/. Install Faker with the command: 
-
-        pip install Faker
-
-Now we can use Faker to generate customer and product details in the 'shop/management/commands/populate_tables.py' file. Go to https://faker.readthedocs.io/en/stable/providers.html and look through the options for Standard Providers to see if you want to change any details in values used.
-
-You should now be able to populate the tables with the command:
-
-        python3 manage.py populate_tables
-
-Then you can start the server to see it running. 
-
-You will need to create a superuser as well if you want to work with the admin features. You can do that with the command:
-
-        python3 manage.py createsuperuser
-
-Otherwise each customer created is also a user with a default password set in the management/commands/populate_tables.py file.
-
-You can launch django with the usual command:
-
+## To run the server:
         python3 manage.py runserver
+## To run the server in Codio
+        python
 
 As you go around the site notice what's working, what's bare-bones, and other issues. This is not finished, but a work in progress to illustrate how you might build a shopping application.
 
