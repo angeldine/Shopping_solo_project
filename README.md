@@ -1,9 +1,8 @@
-# A Shopping Exercise in Python with Django
-A Python Django driven shopping example for deliberate practice
+# A Shopping Solo Project in Python with Django
+A Python Django driven shopping website for Furniture sales.
 
 **********
-
-Ignore this one. It is messy. Go here instead: https://github.com/scharlau/shopping_with_django 
+Github Repository: 
 
 **********
 
