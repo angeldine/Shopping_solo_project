@@ -25,7 +25,7 @@ SECRET_KEY = 'lvujcp8ac^f@gy(dm5h4(q!n9x!s^qq6^pgmv93ws05z-jxdl7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['focusimpact-arizonanight-8000.codio-box.uk']
+ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS=['https://focusimpact-arizonanight-8000.codio-box.uk']
 
 # Application definition
