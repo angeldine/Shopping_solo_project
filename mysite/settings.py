@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'lvujcp8ac^f@gy(dm5h4(q!n9x!s^qq6^pgmv93ws05z-jxdl7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS=['https://focusimpact-arizonanight-8000.codio-box.uk']
 
@@ -126,13 +126,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/images/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'shop/static/images/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images/')
 
 
 # Default primary key field type
