@@ -51,7 +51,7 @@
                 <a class="pr-1 lin" href = "{% url 'shop:dashboard' %}">Dashboard |</a> 
                 
                 <a  href="{% url 'shop:cartlist' %}">
-                    <img id="cart-icon" src="{% static 'images/shop.png' %}"> 
+                    <img id="cart-icon" src="/static/images/shop.png"> 
                </a>
                <p  id="cart-total"> {{cartItems}} </p> 
                 
@@ -60,7 +60,7 @@
               {% else %}
               
                <a  href="{% url 'shop:cartlist' %}">
-                    <img  id="cart-icon" src="{% static 'images/shop.png' %}">
+                    <img  id="cart-icon" src="/static/images/shop.png">
                </a>
                <p  id="cart-total"> {{cartItems}}</p> <p class="pr-3"></p>
                 {% endif %}
